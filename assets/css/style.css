@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: black;
+  font-family: "Padauk", sans-serif;
+  overflow-x: hidden;
+  height: 1500px;
+  background-image: url("Waves.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 800px 790px;
+  background-color: rgb(255 255 255 / 255);
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  background-color: cornflowerblue;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+nav .logo {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  z-index: -1;
+}
+
+nav .logo a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #eee;
+}
+
+/* ------- */
+
+main .landing {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+main .landing .tags {
+  height: 640px;
+}
+
+main .landing .tags h1 {
+  font-size: 42px;
+  font-family: "Pacifico", cursive;
+  color: cornflowerblue;
+  margin-bottom: 15px;
+}
+
+main .landing .tags p {
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+  margin-bottom: 30px;
+  color: cornflowerblue;
+}
+
+main .landing .tags .buttons a {
+  border: 1px solid cornflowerblue;
+  border-radius: 30px;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 5px;
+  text-decoration: none;
+  color: cornflowerblue;
+  transition: 0.5s;
+}
+
+main .landing .tags .buttons a:hover {
+  background: cornflowerblue;
+  color: white;
+}
+
+/* ABOUT */
+.about {
+  background: cornflowerblue;
+  width: 100%;
+  color: white !important;
+}
+
+.about .container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.about .container .aside-about {
+  margin-left: 20px;
+}
+
+.about .container .aside-about h1 {
+  font-family: "Pacifico", cursive;
+}
+
+.about .container .aside-about p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.about .container .aside-about a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5em;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.about .container .aside-about a:hover {
+  background: #5382d8;
+  border-color: #5382d8;
+}
+
+/* FEATURES */
+
+main .features {
+  background: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main .features .container {
+  width: 75%;
+  margin: auto;
+}
+
+main .features .container .feature-music h1 {
+  padding: 5px;
+  background: #f5f5f5;
+  display: inline;
+  margin-left: 30px;
+  color: #5382d8;
+}
+main .features .container .feature-music hr {
+  border-top: 2px solid #5382d8;
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+main .features .container .feature-music .card-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .features .container .feature-music .card-elements .card {
+  background-color: cornflowerblue;
+  background-size: 100% 100%;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s;
+  border: 3px solid cornflowerblue;
+  border-radius: 20px;
+}
+
+/* card hover elements */
+main .features .container .feature-music .card-elements .card h2 {
+  transition: 0.5s;
+}
+
+main .features .container .feature-music .card-elements .card h2 {
+  font-size: 42px;
+}
+
+main .features .container .feature-music .card-elements .card:hover {
+  border-color: #5382d8;
+  background-color: #5382d8;
+  -webkit-box-shadow: inset 1px 1px 10px #333;
+  -moz-box-shadow: inset 1px 1px 10px #333;
+  box-shadow: inset 1px 1px 10px #333;
+}
+
+/* ------- */
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* HAMBURGET MENU ANIMATION */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* RESPONSIVE BREAKPOINT */
+
+/* UKURAN TABLET DAN SETERUSNYA */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 1200px 790px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgb(62, 108, 194);
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 80%;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
+  nav ul.slide {
+    transform: translateX(0%);
+  }
+
+  .ohidden {
+    overflow: hidden;
+  }
+
+  main .landing {
+    text-align: center;
+  }
+  main .landing .tags h1 {
+    color: white;
+  }
+
+  main .landing .tags p {
+    color: white;
+  }
+
+  main .landing .tags .buttons a {
+    border: 1px solid white;
+    color: white;
+  }
+  main .landing .tags p {
+    font-size: 18px;
+  }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .about .container .aside-about {
+    padding: 20px;
+    margin-left: 0px;
+    background: #5382d8;
+  }
+  .about .container .aside-about a:hover,
+  main .landing .tags .buttons a:hover {
+    border-color: #5382d8;
+    -webkit-box-shadow: inset 1px 1px 10px #333;
+    -moz-box-shadow: inset 1px 1px 10px #333;
+    box-shadow: inset 1px 1px 10px #333;
+  }
+}
+
+/* UKURAN MOBILE */
+@media screen and (max-width: 576px) {
+  body {
+    background-size: 160% 790px;
+  }
+
+  main .landing {
+    width: 100%;
+  }
+
+  main .landing .tags p {
+    font-size: 16px;
+  }
+  main .landing .tags p {
+    font-size: 16px;
+  }
+}

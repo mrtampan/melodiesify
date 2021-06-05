@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: "Padauk", sans-serif;
+}
+
+/* === */
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: 0px 2px 1px gray;
+  z-index: 99;
+}
+
+nav .logo {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  margin-top: -10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a i {
+  font-size: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+/* END OF CSS NAVIGASI */
+
+/* START CSS SECTION */
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  z-index: -2;
+}
+
+section .nav-side {
+  background-color: black;
+  width: 15%;
+  min-height: 100vh;
+}
+
+section .nav-side ul {
+  padding-top: 10px;
+  position: sticky;
+  top: 50px;
+  margin-left: 5px;
+}
+
+section .nav-side ul li {
+  width: 100%;
+  margin-top: 10px;
+}
+
+section .nav-side ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ddd;
+}
+
+section .nav-side ul li a:hover {
+  color: white;
+}
+
+section .nav-side .nav-side-web {
+  display: block;
+  margin-left: 10px;
+}
+
+section .nav-side .nav-side-mob {
+  display: none;
+  text-align: center;
+  margin: 0;
+}
+
+/* CSS SECTION CONTENT */
+
+section .content {
+  background-color: #202020;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid blueviolet; */
+}
+
+section .content .content-box {
+  margin: 20px;
+}
+
+section .content .content-box .content-nav .nav-on-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+section .content .content-box .content-nav .nav-on-content a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #b4b4b4;
+}
+
+section .content .content-box h1 {
+  font-size: 26px;
+}
+
+.onActiveNav {
+  border: 1px solid;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 10%;
+}
+
+/* CONTENT GENRE */
+
+section .content .content-box .genre h1 {
+  margin-top: 30px;
+}
+section .content .content-box .genre {
+  position: relative;
+}
+
+section .content .content-box .genre .card-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+section .content .content-box .genre .card-wrap .card {
+  position: relative;
+  overflow: hidden;
+  width: 200px !important;
+  height: 150px;
+  border-radius: 10px;
+}
+
+section .content .content-box .genre .card-wrap .card:hover {
+  cursor: pointer;
+  background: #303030;
+}
+
+section .content .content-box .genre .card-wrap .card h2 {
+  padding: 0.5em;
+}
+
+section .content .content-box .genre .card-wrap .card img {
+  width: 130px;
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+}
+
+section .content .content-box .recommendation {
+  position: relative;
+}
+
+section .content .content-box .recommendation h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+section .content .content-box .recommendation .card-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+section .content .content-box .recommendation .card-wrap .card {
+  border: 1px solid #303030;
+  padding: 10px;
+  background: #202020;
+  transition: 0.3s ease-in-out;
+  width: 150px;
+  height: 100%;
+  margin-right: 10px;
+  position: relative;
+}
+
+section .content .content-box .recommendation .card-wrap .card:hover {
+  background: #303030;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+section .content .content-box .recommendation .card-wrap .card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+section .content .content-box .recommendation h1 {
+  margin-bottom: 5px;
+}
+
+section .content .content-box .recommendation .card-wrap .card .labelPlay {
+  margin-top: 10px;
+}
+
+section .content .content-box .recommendation .card-wrap .card h6 {
+  margin-top: -3px;
+  width: 100%;
+  white-space: nowrap;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+section .content .content-box .recommendation .card-wrap .card label {
+  font-size: 14px;
+  color: #ddd;
+  width: 100%;
+  white-space: nowrap;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+section .content .content-box .recommendation .card-wrap .card .btn-wrap {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  margin-top: -95px;
+  margin-left: 5px;
+  display: none;
+}
+
+section
+  .content
+  .content-box
+  .recommendation
+  .card-wrap
+  .card
+  .btn-wrap
+  button {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #0f800f;
+  border: 0;
+  border-radius: 50px;
+}
+section
+  .content
+  .content-box
+  .recommendation
+  .card-wrap
+  .card
+  .btn-wrap
+  button
+  i {
+  font-size: 15px;
+}
+
+section
+  .content
+  .content-box
+  .recommendation
+  .card-wrap
+  .card
+  .btn-wrap
+  button
+  .bi-play-fill,
+section
+  .content
+  .content-box
+  .recommendation
+  .card-wrap
+  .card
+  .btn-wrap
+  button
+  .bi-pause-fill {
+  font-size: 19px;
+  color: white;
+}
+
+/* ARTIST CSS */
+section .content .content-box .artist h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+section .content .content-box .artist h1 img {
+  position: relative;
+  top: 3px;
+  width: 20px;
+}
+
+section .content .content-box .artist .card-wrap .card {
+  position: relative;
+  width: 200px;
+}
+
+section .content .content-box .artist .card-wrap .card h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+section .content .content-box .artist .card-wrap .card a {
+  text-decoration: none;
+}
+
+section .content .content-box .artist .card-wrap .card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+section#footbar {
+  background: red;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 10%;
+  overflow: auto;
+}
+
+section#footbar .container {
+  width: 80%;
+  margin: auto;
+  border: 1px solid white;
+  display: flex;
+}
+
+section#footbar .container audio {
+  background: transparent;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+@media screen and (max-width: 480px), (max-width: 800px) {
+  nav .logo {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  section .nav-side .nav-side-web {
+    display: none;
+  }
+
+  section .nav-side .nav-side-mob {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  section .content .content-box {
+    margin: 10px;
+    margin-top: 15px;
+  }
+
+  section .content .content-box .content-nav .nav-on-content {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .onActiveNav {
+    border: 1px solid;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 5%;
+  }
+
+  section .content .content-box .content-nav .nav-on-content a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  section .content .content-box h1 {
+    font-size: 18px;
+  }
+
+  section .content .content-box .genre .card-wrap .card {
+    position: relative;
+    width: 100px !important;
+    height: 100px;
+    border-radius: 0;
+  }
+
+  section .content .content-box .genre .card-wrap {
+    display: block;
+  }
+
+  section .content .content-box .genre .card-wrap .card h2 {
+    padding: 0.2em;
+    font-size: 18px;
+  }
+
+  section .content .content-box .genre .card-wrap .card img {
+    width: 90px;
+    bottom: -5px;
+    left: -3px;
+  }
+
+  section .content .content-box .recommendation .card-wrap .card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100px;
+  }
+
+  section .content .content-box .recommendation h1 {
+    margin-top: 0px;
+  }
+
+  section .content .content-box .recommendation .card-wrap .card img {
+    width: 100%;
+    height: 100px;
+  }
+
+  section .content .content-box .recommendation .card-wrap .card .labelPlay h6 {
+    font-size: 12px;
+  }
+
+  section
+    .content
+    .content-box
+    .recommendation
+    .card-wrap
+    .card
+    .labelPlay
+    label {
+    font-size: 10px;
+    height: 15px;
+    margin-top: -5px;
+  }
+
+  section .content .content-box .artist h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  section .content .content-box .artist .card-wrap .card {
+    position: relative;
+    width: 70px;
+  }
+  section .content .content-box .artist .card-wrap .card img {
+    height: 70px;
+    width: 70px;
+  }
+
+  section .content .content-box .artist .card-wrap .card h2 {
+    font-size: 12px;
+  }
+
+  section .content .content-box .recommendation .card-wrap .card .btn-wrap {
+    display: flex;
+    position: relative;
+    margin-top: 5px;
+    margin-left: -0px;
+    display: block;
+  }
+
+  section
+    .content
+    .content-box
+    .recommendation
+    .card-wrap
+    .card
+    .btn-wrap
+    button {
+    width: 30px;
+    height: 30px;
+  }
+
+  section .content .content-box .artist h1 img {
+    width: 15px;
+  }
+}
